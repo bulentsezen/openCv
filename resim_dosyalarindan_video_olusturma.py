@@ -22,7 +22,7 @@ del size[2]
 size.reverse()
 # print(size)
 
-video = cv2.VideoWriter("uretilen_video.mp4", cv2_fourcc, 4, size) #output video name, fourcc, fps, size
+video = cv2.VideoWriter("uretilen_video.mp4", cv2_fourcc, 24, size) #output video name, fourcc, fps, size
 
 for i in range(len(img)):
     video.write(cv2.imread(img[i]))
